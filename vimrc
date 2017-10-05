@@ -66,8 +66,8 @@ let g:is_posix = 1
 set tabstop=4
 set shiftwidth=4
 set shiftround
-set expandtab
-
+"set expandtab
+set smartindent
 " Display extra whitespace
 "set list listchars=tab:»·,trail:·,nbsp:·
 
