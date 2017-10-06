@@ -45,18 +45,20 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 
+
+ "This made my vim bug, might fix it later"
   " ALE linting events
-  if g:has_async
-    set updatetime=1000
-    let g:ale_lint_on_text_changed = 0
-    autocmd CursorHold * call ale#Lint()
-    autocmd CursorHoldI * call ale#Lint()
-    autocmd InsertEnter * call ale#Lint()
-    autocmd InsertLeave * call ale#Lint()
-  else
-    echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
-  endif
-augroup END
+"  if g:has_async
+ "   set updatetime=1000
+  "  let g:ale_lint_on_text_changed = 0
+  "  autocmd CursorHold * call ale#Lint()
+  "  autocmd CursorHoldI * call ale#Lint()
+  "  autocmd InsertEnter * call ale#Lint()
+  "  autocmd InsertLeave * call ale#Lint()
+ " else
+ "   echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
+ " endif
+"augroup END
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.
@@ -150,6 +152,9 @@ nnoremap <C-l> <C-w>l
 inoremap {<cr> {<cr>}<c-o><s-o>
 inoremap [<cr> [<cr>]<c-o><s-o>
 inoremap (<cr> (<cr>)<c-o><s-o>
+
+"Base 16 colos scheme
+colorscheme base16-default-dark
 
 
 " Move between linting errors

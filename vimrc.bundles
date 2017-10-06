@@ -58,6 +58,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
+Plug 'chriskempson/base16-vim'
+Plug 'scrooloose/nerdtree'
 
 if g:has_async
   Plug 'w0rp/ale'
