@@ -60,6 +60,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
 
 if g:has_async
   Plug 'w0rp/ale'

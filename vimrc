@@ -156,6 +156,8 @@ inoremap (<cr> (<cr>)<c-o><s-o>
 "Base 16 colos scheme
 colorscheme base16-default-dark
 
+"Relative line numbers with hybrid
+:set number relativenumber
 
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
