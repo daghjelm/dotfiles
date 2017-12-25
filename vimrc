@@ -47,31 +47,33 @@ augroup vimrcEx
 
 
  "This made my vim bug, might fix it later"
-  " ALE linting events
-"  if g:has_async
- "   set updatetime=1000
-  "  let g:ale_lint_on_text_changed = 0
-  "  autocmd CursorHold * call ale#Lint()
-  "  autocmd CursorHoldI * call ale#Lint()
-  "  autocmd InsertEnter * call ale#Lint()
-  "  autocmd InsertLeave * call ale#Lint()
- " else
- "   echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
- " endif
+"ALE linting events
+"if g:has_async
+"   set updatetime=1000
+"    let g:ale_lint_on_text_changed = 0
+"    autocmd CursorHold * call ale#Lint()
+"    autocmd CursorHoldI * call ale#Lint()
+"    autocmd InsertEnter * call ale#Lint()
+"    autocmd InsertLeave * call ale#Lint()
+" else
+"   echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
+"endif
 "augroup END
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.
 let g:is_posix = 1
 
-"Softtabs 2spaces
+"Softtabs 4spaces
 set tabstop=4
 set shiftwidth=4
 set shiftround
-"set expandtab
+set expandtab
 set smartindent
+set smarttab
 " Display extra whitespace
 "set list listchars=tab:»·,trail:·,nbsp:·
+
 
 " Use one space, not two, after punctuation.
 set nojoinspaces

@@ -61,6 +61,9 @@ Plug 'vim-scripts/tComment'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
 
 if g:has_async
   Plug 'w0rp/ale'
