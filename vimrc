@@ -14,9 +14,12 @@ set autowrite     " Automatically :write before running commands
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
+"if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+ " syntax on
+"endif
+
+packadd! onedark.vim
+
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -55,7 +58,7 @@ augroup vimrcEx
 "    autocmd CursorHoldI * call ale#Lint()
 "    autocmd InsertEnter * call ale#Lint()
 "    autocmd InsertLeave * call ale#Lint()
-" else
+"else
 "   echoerr "The thoughtbot dotfiles require NeoVim or Vim 8"
 "endif
 "augroup END
@@ -65,8 +68,8 @@ augroup vimrcEx
 let g:is_posix = 1
 
 "Softtabs 4spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set shiftround
 set expandtab
 set smartindent
@@ -179,3 +182,7 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+syntax on
+colorscheme onedark
+

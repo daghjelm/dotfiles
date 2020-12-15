@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontFamily": "Source Code Pro",
+    "editor.minimap.enabled": true,
+    "workbench.activityBar.visible": false,
+    "[python]": {
+    
+    },
+    "python.defaultInterpreterPath": "/usr/local/bin/python3"
+}

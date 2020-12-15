@@ -13,7 +13,7 @@
   pf = push --force-with-lease
   st = status
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/daghjelm/.gitignore
   autocrlf = input
 [merge]
   ff = only
@@ -27,4 +27,10 @@
   path = ~/.gitconfig.local
 [user]
 	name = Dag Hjelm
-	email = daghjelm@kth.se
+	email = dag@isolve.se
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
