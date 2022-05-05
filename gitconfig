@@ -1,2 +1,5 @@
 [alias]
 	co = checkout
+[user]
+	name = Dag Hjelm
+	email = dag.hjelm@gmail.com
