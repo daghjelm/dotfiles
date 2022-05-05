@@ -7,5 +7,10 @@ alias py="python3"
 
 fish_vi_key_bindings
 
+fish_add_path /usr/local/opt/ruby/bin
+fish_add_path /Users/daghjelm/flutter/bin
+fish_add_path /Users/daghjelm/Library/Android/sdk/tools/bin
+
+
 
 starship init fish | source
