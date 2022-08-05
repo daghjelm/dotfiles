@@ -3,3 +3,5 @@
 [user]
 	name = Dag Hjelm
 	email = dag.hjelm@gmail.com
+[safe]
+	directory = /Users/daghjelm/Documents/bld/chaap-app

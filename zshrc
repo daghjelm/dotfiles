@@ -80,3 +80,6 @@ path+=('/Users/daghjelm/Library/Android/sdk/tools/bin')
 export PATH
 
 eval "$(starship init zsh)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
