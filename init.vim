@@ -1,4 +1,4 @@
-syntax on
+Syntax on
 
 set noerrorbells
 
