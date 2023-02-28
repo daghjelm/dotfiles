@@ -1,15 +1,19 @@
 # aliases
 alias vim="nvim"
 alias vimrc="nvim ~/dotfiles/init.vim"
+alias nvimrc="nvim /Users/daghjelm/.config/nvim/lua/"
 alias zshrc="nvim ~/dotfiles/config.fish"
 alias fishconfig="nvim ~/dotfiles/config.fish"
-alias py="python3"
+alias py="/opt/homebrew/bin/python3"
 
 fish_vi_key_bindings
 
+#variables
+set GOPATH '/Users/daghjelm/go'
+set GOROOT '/opt/homebrew/Cellar/go/1.19/libexec'
+set SDKROOT '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk'
+
 fish_add_path /usr/bin
-fish_add_path /usr/local/bin
-fish_add_path /opt/homebrew/bin
 fish_add_path /usr/local/opt/ruby/bin
 fish_add_path /opt/homebrew/opt/openjdk/bin
 fish_add_path /Users/daghjelm/development/flutter/bin
@@ -18,6 +22,12 @@ fish_add_path /Users/daghjelm/Library/Python/3.8/bin
 fish_add_path /Users/daghjelm/.volta/bin
 fish_add_path /Users/daghjelm/google-cloud-sdk/bin
 fish_add_path $HOME/.cargo/bin
+fish_add_path /usr/local/go/bin
+fish_add_path $GOPATH/bin
+fish_add_path /Users/daghjelm/jdtls/jdt-language-server-1.9.0-202203031534/bin
+fish_add_path /opt/homebrew/opt/llvm/bin
+fish_add_path /usr/local/bin
+fish_add_path -m /opt/homebrew/bin
 
 function nvm
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv

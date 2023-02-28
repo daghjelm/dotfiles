@@ -1,0 +1,1 @@
+xcodebuild -showsdks | grep -oe "-sdk .*" | awk '{print $2}' | xargs -S 1000 -n 1 -R '-1' -I % sh -c 'xcrun --sdk % --show-sdk-path --show-sdk-path && xcrun --sdk % --show-sdk-version && xcrun --sdk % --show-sdk-build-version && xcrun --sdk % --show-sdk-platform-path && xcrun --sdk % --show-sdk-platform-version'

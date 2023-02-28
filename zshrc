@@ -1,4 +1,5 @@
-
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 #autoload -U promptinit; promptinit
 #prompt pure
 
@@ -58,11 +59,13 @@ else
   export EDITOR='nvim'
 fi
 
+bindkey -v
+
 # aliases
 alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias py="python3"
-alias co="checkout"
+#alias co="checkout"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/daghjelm/Documents/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/daghjelm/Documents/google-cloud-sdk/path.zsh.inc'; fi
@@ -73,13 +76,34 @@ if [ -f '/Users/daghjelm/Documents/google-cloud-sdk/completion.zsh.inc' ]; then 
 #NVM path
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
-path+=('/usr/local/opt/ruby/bin')
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export GOPATH="/Users/daghjelm/go"
+#export SDKROOT='/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk'
+
+path+=('/Users/daghjelm/development/flutter/bin')
 path+=('/Users/daghjelm/flutter/bin')
+path+=('/opt/homebrew/bin')
+path+=('/usr/bin')
+path+=('/usr/local/bin')
+path+=('/usr/local/opt/ruby/bin')
 path+=('/Users/daghjelm/Library/Android/sdk/tools/bin')
+path+=('/Users/daghjelm/go/bin')
+path+=('/opt/homebrew/opt/openjdk/bin')
+path+=('/opt/homebrew/opt/llvm/bin')
+path+=('/Users/daghjelm/Library/Python/3.8/bin')
+path+=('/Users/daghjelm/.volta/bin')
+path+=('/Users/daghjelm/google-cloud-sdk/bin')
+path+=('$HOME/.cargo/bin')
+path+=('/usr/local/go/bin')
+path+=('$GOPATH/bin')
+path+=('/Users/daghjelm/jdtls/jdt-language-server-1.9.0-202203031534/bin')
 
 export PATH
 
 eval "$(starship init zsh)"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+#export GOROOT="/opt/homebrew/Cellar/go/1.19/libexec"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
