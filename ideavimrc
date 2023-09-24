@@ -1,0 +1,17 @@
+set visualbell
+set noerrorbells
+set relativenumber
+set number
+
+let mapleader = "\<space>"
+
+#split with leader v or h
+nnoremap <leader>v :vsplit<cr>
+nnoremap <leader>h :split<cr>
+
+nnoremap <leader>a gg<s-v><s-g><cr>
+nnoremap <leader>r :%s/
+
+#Copy with leader - y
+vnoremap <leader>y "*y
+

@@ -1,0 +1,20 @@
+set visualbell
+set noerrorbells
+
+let mapleader = "\<space>"
+
+#split with leader v or h
+nnoremap <leader>v :vsplit<cr>
+nnoremap <leader>s :split<cr>
+
+#navigate panes with leader and hjkl
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+nnoremap <leader>a gg<s-v><s-g><cr>
+#nnoremap <leader>r :%s/
+
+#Copy with leader - y
+vnoremap <leader>y "*y
