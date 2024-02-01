@@ -1,0 +1,35 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "vim.vimrc.enable": true,
+  "vim.leader": "<space>",
+  "vim.vimrc.path": "/Users/daghjelm/.vscode_vimrc",
+  "[python]": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Fira Code, 'Courier New', monospace",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "editor.defaultFormatter": "ms-python.python",
+  "vim.commandLineModeKeyBindings": [],
+  "cmake.configureOnOpen": false,
+  "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
+  "terminal.integrated.inheritEnv": false,
+  "redhat.telemetry.enabled": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-k>"],
+      "commands": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": [{ "command": "editor.action.rename" }]
+    }
+  ]
+}
+
