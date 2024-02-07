@@ -93,6 +93,7 @@ alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias py="python3"
 alias nicelog="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
+alias capsctrl="setxkbmap -option ctrl:nocaps && xcape -e 'Control_L=Escape' -t 175"
 #alias co="checkout"
 
 # The next line updates PATH for the Google Cloud SDK.
