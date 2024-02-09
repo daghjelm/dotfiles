@@ -7,7 +7,7 @@ set_local.expandtab = true
 -- If you started neovim within `~/dev/xy/project-1` this would resolve to `project-1`
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 
-local workspace_dir = '/Users/daghjelm/java_data/' .. project_name
+local workspace_dir = '/home/dag/java_data/' .. project_name
 
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 local config = {
@@ -30,13 +30,13 @@ local config = {
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
 
     -- 💀
-    '-jar', '/Users/daghjelm/jdtls/jdt-language-server-1.9.0-202203031534/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
+    '-jar', '/home/dag/jdtls/jdt-language-server-1.9.0-202203031534/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
          -- Must point to the                                                     
          -- eclipse.jdt.ls installation                                           
 
 
     -- 💀
-    '-configuration', '/Users/daghjelm/jdtls/jdt-language-server-1.9.0-202203031534/config_mac',
+    '-configuration', '/home/dag/jdtls/jdt-language-server-1.9.0-202203031534/config_mac',
                     -- Must point to the                      Change to one of `linux`, `win` or `mac`
                     -- eclipse.jdt.ls installation            Depending on your system.
 
