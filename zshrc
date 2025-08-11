@@ -8,6 +8,12 @@ fi
 # vi bindings in prompt
 bindkey -v
 
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+
+bindkey '^R' history-incremental-search-backward
+
 # aliases
 alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.vim"
@@ -44,3 +50,15 @@ unset __conda_setup
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/daghjelm/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daghjelm/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/daghjelm/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daghjelm/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+. "$HOME/.local/bin/env"
