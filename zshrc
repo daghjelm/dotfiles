@@ -14,8 +14,6 @@ alias vim="nvim"
 alias vimrc="nvim ~/.config/nvim/init.vim"
 alias nicelog="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 
-export PATH=
-
 # prepended path variables
 path=('/usr/local/bin' $path)
 path=('/opt/homebrew/bin' $path)
@@ -59,3 +57,4 @@ eval "$(starship init zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH=/opt/spotify-devex/bin:$PATH
