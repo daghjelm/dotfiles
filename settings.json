@@ -1,0 +1,77 @@
+{
+  "editor.minimap.enabled": false,
+  "vim.vimrc.enable": true,
+  "vim.leader": "<space>",
+  "vim.vimrc.path": "/Users/daghjelm/dotfiles/vscode_vimrc",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontWeight": "450",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.defaultFormatter": "ms-python.python",
+  "vim.commandLineModeKeyBindings": [],
+  "cmake.configureOnOpen": false,
+  "terminal.integrated.inheritEnv": true,
+  "terminal.integrated.env.osx": {
+    "PATH": ""
+  },
+  "redhat.telemetry.enabled": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-k>"],
+      "commands": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": [{ "command": "editor.action.rename" }]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": [{ "command": "workbench.action.toggleSidebarVisibility" }]
+    }
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "java": false
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.commandsToSkipShell": [
+    "github.copilot.terminal.suggestCommand",
+    "matlab.interrupt"
+  ],
+  "workbench.activityBar.location": "hidden",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "go.inferGopath": true,
+  "go.gopath": "",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  // "jdk": "jdkhome",
+  "editor.cursorSurroundingLines": 10,
+  "settingsSync.ignoredSettings": [
+    "editor.fontFamily"
+  ],
+  "editor.formatOnPaste": true,
+  "workbench.colorTheme": "Default Dark+",
+  "calva.paredit.defaultKeyMap": "strict",
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true
+}
